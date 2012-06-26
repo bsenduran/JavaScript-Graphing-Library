@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<div id="svgContainer" style="width:2000px;height:1500px">
+
+</div>
+
+
+<script type="text/javascript" src="GraphCore.js"></script>
+<script type="text/javascript" src="LinePlugIn.js"></script>
+<script type="text/javascript" src="XmlPlugIn.js"></script>
+
+
+
+<script type="text/javascript" src="QueryPlugIn.js"></script>
+
+
+
+
+<script type="text/javascript">
+
+var c1 = new Context();
+c1.GridColor = "black";
+c1.LineColor[0] = "green";
+c1.LineColor[1] = "red";
+c1.XAxis="Student";
+c1.YAxis="Marks";
+c1.Dotcolor="purple";
+    c1.LegendLbl[0]="Student 1";
+    c1.LegendLbl[1]="Student 2";
+
+c1.LegendAlign="right-center";
+c1.GridWidth=0.3;
+c1.ShowGrid=true;
+
+
+var g = new Line_Graph("svgContainer","Mid Marks");
+
+g.setContext(c1);
+
+//g.addPlugInData(XmlReader("30data.xml"),XmlReader("30data2.xml"));
+g.addPlugInData(getMax(XmlReader("30data.xml"),10),XmlReader("30data2.xml"));
+
+g.render();
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+
+
+
+        <script type="text/javascript" src="GraphCore.js"></script>
+
+
+
+
+        <script type="text/javascript" src="LinePlugIn.js"></script>
+
+
+
+
+
+
+        <script type="text/javascript" src="XmlPlugIn.js"></script>
+        <script type="text/javascript" src="JsonPlugIn.js"></script>
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+
+            var lineGraph = new Line_Graph("divName","title");
+
+
+
+            var myContext = new Context();
+
+            myContext.GridColor="black";
+            myContext.GridWidth="0.5";
+            myContext.PlayAnimations=true;
+            myContext.LegendAlign="right-center";
+            myContext.XAxis="Date";
+            myContext.YAxis="Temperature";
+
+
+            myContext.LineColor[0]="red";
+            myContext.LineColor[1]="green";
+            myContext.LineColor[2]="blue";
+            myContext.LegendLbl[0]="City1";
+            myContext.LegendLbl[1]="City2";
+            myContext.LegendLbl[2]="City3";
+
+
+
+
+
+
+
+
+            lineGraph.setContext(myContext);
+
+
+
+            lineGraph.addPlugInData(XmlReader("data1.xml"),
+                                    JsonReader("data2.json"),
+                                    XmlReader("data3.xml"));
+
+
+            lineGraph.render();
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

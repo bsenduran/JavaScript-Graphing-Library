@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div id="svgContainer" style="width:1500px;height:1500px">
+
+</div>
+
+
+<script type="text/javascript" src="GraphCore.js"></script>
+<script type="text/javascript" src="BarPlugIn.js"></script>
+<script type="text/javascript" src="XmlPlugIn.js"></script>
+<script type="text/javascript" src="JsonPlugIn.js"></script>
+<script type="text/javascript" src="QueryPlugIn.js"></script>
+
+<script type="text/javascript">
+
+    var c1 = new Context();
+    c1.ShowGrid = true;
+//    c1.FillColor[1] = "yellow";
+    c1.XAxis = "City";
+    c1.YAxis = "Temperature";
+
+
+    var g = new Bar_Graph("svgContainer", "Marks");
+    g.setContext(c1);
+
+//    g.addPlugInData(getMax(XmlReader("points1.xml"),8),
+    g.addPlugInData(XmlReader("points1.xml"),
+                    XmlReader("points2.xml"));
+
+//            JsonReader("jsonData.json"));
+
+    g.render();
+
+</script>
+
+</body>
+</html>

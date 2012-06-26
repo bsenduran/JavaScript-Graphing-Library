@@ -1,0 +1,49 @@
+<records>
+    <points>
+
+        <point>
+            <x>A</x>
+            <y>10</y>
+            <description> description1 </description>
+        </point>
+
+        <point>
+            <x>B</x>
+            <y>150</y>
+            <description> description2 </description>
+        </point>
+
+        <point>
+            <x>C</x>
+            <y>10</y>
+        </point>
+
+        <point>
+            <x>D</x>
+            <y>45</y>
+            <description> description4 </description>
+        </point>
+
+        <point>
+            <x>E</x>
+            <y>90</y>
+        </point>
+
+        <point>
+            <x>F</x>
+            <y>60</y>
+        </point>
+
+        <point>
+            <x>G</x>
+            <y>30</y>
+        </point>
+
+        <point>
+            <x>H</x>
+            <y>70</y>
+        </point>
+
+    </points>
+
+</records>

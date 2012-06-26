@@ -1,0 +1,39 @@
+{"records":[
+    {
+        "name":"A",
+        "value":55,
+        "description":"des1 for A 55"
+    },
+    {
+        "name":"B",
+        "value":45,
+        "description":"des1 for B 45"
+    },
+
+    {
+        "name":"D",
+        "value":39,
+        "description":"des1 for D 39"
+    },
+    {
+        "name":"C",
+        "value":-35,
+        "description":"des1 for C 35"
+    },
+    {
+        "name":"E",
+        "value":15,
+        "description":"des1 for E 15"
+    },
+    {
+        "name":"F",
+        "value":25,
+        "description":"des1 for F 25"
+    },
+    {
+        "name":"G",
+        "value":35,
+        "description":"des1 for G 35"
+    }
+]
+}

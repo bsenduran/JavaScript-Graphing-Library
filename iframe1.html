@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+Graph Type : <select onChange="changeSource(this.options[selectedIndex].value);">
+ 
+
+   <option  value="mulineObj.html">Line</option>
+  <option value=" muBarTest.html">Bar</option>
+    <option  value="muPieTest.html" >Pie</option>
+</select>
+
+
+
+
+
+
+<iframe name="frPage2" src="mulineObj.html" width="1400" height="800" scrolling="no" frameborder="0">
+<p>Your browser does not support iframes.</p>
+</iframe>
+
+
+
+</body>
+</html>
+
+<script>
+function changeSource(newSource) {
+parent.frPage2.document.location=newSource;
+}
+</script>
+

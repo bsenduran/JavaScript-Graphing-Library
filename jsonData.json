@@ -1,0 +1,43 @@
+{"records":[
+    {
+        "name":"G",
+        "value":50,
+        "description":"des for G 50"
+    },
+    {
+        "name":"B",
+        "value":40,
+        "description":"des for B 40"
+    },
+    {
+        "name":"C",
+        "value":30,
+        "description":"des for C 30"
+    },
+    {
+        "name":"D",
+        "value":20,
+        "description":"des for D 20"
+    },
+    {
+        "name":"F",
+        "value":60,
+        "description":"des for F 100"
+    },
+    {
+        "name":"E",
+        "value":20,
+        "description":"des for E 20"
+    },
+    {
+        "name":"H",
+        "value":90,
+        "description":"des for H 90"
+    },
+    {
+        "name":"A",
+        "value":30,
+        "description":"des for A 30"
+    }
+]
+}

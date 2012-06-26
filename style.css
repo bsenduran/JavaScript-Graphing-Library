@@ -1,0 +1,39 @@
+   div#svgContainer {
+        width: 1045px;
+        height: 541px;
+    }
+	
+	
+	 .caption{
+	font-size: 14px;
+	font-family: Georgia, serif;
+	
+    }
+    .tooltip{
+		font-family: Georgia, serif;
+	font-size: 12px;
+	font-weight:bold;
+	
+    }
+	
+	 .tooltip1{
+		font-family: Arial;
+		font-size: 12px;
+		
+	
+    }
+	
+    .tooltip_bg{
+	fill: white;
+	/*stroke: #4572A7; */
+	stroke-width: 2;
+	opacity: 0.85;
+	z-index:2;
+	
+    }
+
+   .classBar{
+       opacity: 1;
+   }
+
+	
